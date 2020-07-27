@@ -47,8 +47,8 @@ Solução de integração de dados para o sistema de cashback
       * Grafana: Dashboard para monitoria de logs e notificações
         * Documentação oficial: https://grafana.com/docs/
 
-## Desenho da solução de integração
-	<img src="https://github.com/marcelocastilho/integracao-cashback/blob/master/resources/solucao-cashback.png">
+## Desenho da solução de integração	
+    ![./resources/solucao-cashback.png]
 
 ## Exemplo uso do Nifi
 	<img src="https://github.com/marcelocastilho/integracao-cashback/blob/master/resources/apache%20fini%20process%20example.png">
