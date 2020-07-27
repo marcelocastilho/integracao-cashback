@@ -25,23 +25,23 @@ Solução de integração de dados para o sistema de cashback
 		Gerar notificações em caso de problemas identificados
 
 ## Sugestão de ferramentas para a solução	
-   * Integração, transformação e migração de dados
+   * **Integração, transformação e migração de dados**
        * Apache Nifi
          * Documentação oficial: https://nifi.apache.org/docs/nifi-docs/
          * Exemplo de uso: https://gist.github.com/ijokarumawak/42c257afb5e80361e502564085d7999e
        * Pentaho data integration
          * Documentação oficial: https://help.pentaho.com/Documentation/8.2
-   * MessageBus
+   * **MessageBus**
        * RabbitMQ em caso de trabalhar com filas
          * Documentação oficial: https://www.rabbitmq.com/documentation.html
        * Apache kafka em caso de trabalhar com topicos
             * Documentação oficial: https://kafka.apache.org/documentation/
-   * Gestão de Logs:
+   * **Gestão de Logs**:
        * Stack ELK - https://www.elastic.co/pt/what-is/elk-stack
        * Elasticsearch: Banco de dados de logs
        * Logstach: Formatação de logs
        * Kibana: Visualização de logs       
-   * Monitoria:
+   * **Monitoria**:
        * APM: Visualização facilitada pra trace e métricas das transações
        * Grafana: Dashboard para monitoria de logs e notificações
          * Documentação oficial: https://grafana.com/docs/
