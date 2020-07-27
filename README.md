@@ -48,7 +48,7 @@ Solução de integração de dados para o sistema de cashback
         * Documentação oficial: https://grafana.com/docs/
 
 ## Desenho da solução de integração	
-    ![./resources/solucao-cashback.png]
+![/resources/solucao-cashback.png]
 
 ## Exemplo uso do Nifi
 	<img src="https://github.com/marcelocastilho/integracao-cashback/blob/master/resources/apache%20fini%20process%20example.png">
