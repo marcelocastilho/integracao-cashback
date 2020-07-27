@@ -51,7 +51,7 @@ Solução de integração de dados para o sistema de cashback
 ![/resources/solucao-cashback.png]
 
 ## Exemplo uso do Nifi
-	<img src="https://github.com/marcelocastilho/integracao-cashback/blob/master/resources/apache%20fini%20process%20example.png">
+	<img src="http://github.com/marcelocastilho/integracao-cashback/blob/master/resources/apache%20fini%20process%20example.png">
 
 ### Outras possíveis soluções
    * Usar a ferramenta DMS da própria AWS para a migração de dados
