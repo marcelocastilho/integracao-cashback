@@ -48,10 +48,10 @@ Solução de integração de dados para o sistema de cashback
         * Documentação oficial: https://grafana.com/docs/
 
 ## Desenho da solução de integração	
-![/resources/solucao-cashback.png]
+![solucao-cashback](https://user-images.githubusercontent.com/10811002/88494380-42203700-cf8c-11ea-92da-36790ff4b411.png)
 
-## Exemplo uso do Nifi
-	<img src="http://github.com/marcelocastilho/integracao-cashback/blob/master/resources/apache%20fini%20process%20example.png">
+## Exemplo pipeline do apache Nifi
+![apache fini process example](https://user-images.githubusercontent.com/10811002/88494601-32552280-cf8d-11ea-85e7-61eea0fc81c4.png)
 
 ### Outras possíveis soluções
    * Usar a ferramenta DMS da própria AWS para a migração de dados
