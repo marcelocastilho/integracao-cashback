@@ -14,14 +14,14 @@ Solução de integração de dados para o sistema de cashback
 	Entendo como melhor solução ficar a cargo da aplicação de controle de cashback fazer uma postagem de mensagem para a integração com o sistema legado.
 
 ## Requisitos não funcionais
-* Politicas de retentativa: Poder configurar regras de retentativa em caso de erro nas postagens no messageBus
-* Resiliência: Possibilitar uso de um orquestrador containeres, como o Kubernetes
-* Fluxo assíncrono: Possibilitar entre o fonte e o destino possibilitando uma liberdade maior para mudanças
-* Gestão de logs: 
+* **Politicas de retentativa:** Poder configurar regras de retentativa em caso de erro nas postagens no messageBus
+* **Resiliência:** Possibilitar uso de um orquestrador containeres, como o Kubernetes
+* **Fluxo assíncrono:** Possibilitar entre o fonte e o destino possibilitando uma liberdade maior para mudanças
+* **Gestão de logs:** 
     * Gerar logs a cada registro/mensagem comsumida
     * Usar uma ferramenta de centralização de logs
     * Criar rotinas ou configurar TTL para expurgo dos logs
-* Monitoria: Ter uma board que possibilite ver o status das integrações de forma simplificada
+* **Monitoria:** Ter um board que possibilite visualizar o status das integrações de forma simplificada
 		Gerar notificações em caso de problemas identificados
 
 ## Sugestão de ferramentas para a solução	
@@ -40,12 +40,11 @@ Solução de integração de dados para o sistema de cashback
        * Stack ELK - https://www.elastic.co/pt/what-is/elk-stack
        * Elasticsearch: Banco de dados de logs
        * Logstach: Formatação de logs
-       * Kibana: Visualização de logs
-     			
-    * Monitoria:
-      * APM: Visualização facilitada pra trace e métricas das transações        
-      * Grafana: Dashboard para monitoria de logs e notificações
-        * Documentação oficial: https://grafana.com/docs/
+       * Kibana: Visualização de logs       
+     * Monitoria:
+       * APM: Visualização facilitada pra trace e métricas das transações
+       * Grafana: Dashboard para monitoria de logs e notificações
+         * Documentação oficial: https://grafana.com/docs/
 
 ## Desenho da solução de integração	
 ![solucao-cashback](https://user-images.githubusercontent.com/10811002/88494380-42203700-cf8c-11ea-92da-36790ff4b411.png)
