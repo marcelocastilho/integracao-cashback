@@ -1,0 +1,164 @@
+Exemplo Json Revendedoras
+{
+	"Codigo": 1,
+	"nome-completo": "Joana da Silva",
+	"email": "joanadasilva@gmail.com.br",
+	"Endereço": "Rua das Revendedoras, 23 - São José dos Pinhais - PR - Brasil",
+	"logradouro": "Rua das Revendedoras",
+	"numero": 23,
+	"cep": "83030540",
+	"bairro": "Afonso Pena",
+	"setor": "Quem disse Berenice"
+}
+
+Json schema:
+
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "Estrutura da entidade Vendedora",
+    "description": "Esta estrutura é relativa a entidade Vendedora no sistema cashback",
+    "default": {},
+    "examples": [
+        {
+            "codigo": 1,
+            "nome-completo": "Joana da Silva",
+            "email": "joanadasilva@gmail.com.br",
+            "Endereco": {
+                "endereco-completo": "Rua das Revendedoras, 23 - São José dos Pinhais - PR - Brasil",
+                "logradouro": "Rua das Revendedoras",
+                "numero": 23,
+                "cep": "83030540",
+                "bairro": "Afonso Pena"
+            },
+            "setor": "Quem disse Berenice"
+        }
+    ],
+    "required": [
+        "codigo",
+        "nome-completo",
+        "email",
+        "Endereco",
+        "setor"
+    ],
+    "properties": {
+        "codigo": {
+            "$id": "#/properties/codigo",
+            "type": "integer",
+            "title": "Propriedade Código da Vendedora",
+            "description": "Código da vendedora junto ao banco de dados.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "nome-completo": {
+            "$id": "#/properties/nome-completo",
+            "type": "string",
+            "title": "Propriedade nome completo da vendedora",
+            "description": "Nome completo da Vendedora.",
+            "default": "",
+            "examples": [
+                "Joana da Silva"
+            ]
+        },
+        "email": {
+            "$id": "#/properties/email",
+            "type": "string",
+            "title": "Propriedade e-mail da Vendedora",
+            "description": "E-mail da Vendedora.",
+            "default": "",
+            "examples": [
+                "joanadasilva@gmail.com.br"
+            ]
+        },
+        "Endereco": {
+            "$id": "#/properties/Endereco",
+            "type": "object",
+            "title": "Propriedade Endereço da Vendedora",
+            "description": "Dados de endereço da Vendedora",
+            "default": {},
+            "examples": [
+                {
+                    "endereco-completo": "Rua das Revendedoras, 23 - São José dos Pinhais - PR - Brasil",
+                    "logradouro": "Rua das Revendedoras",
+                    "numero": 23,
+                    "cep": "83030540",
+                    "bairro": "Afonso Pena"
+                }
+            ],
+            "required": [
+                "endereco-completo",
+                "logradouro",
+                "numero",
+                "cep",
+                "bairro"
+            ],
+            "properties": {
+                "endereco-completo": {
+                    "$id": "#/properties/Endereco/properties/endereco-completo",
+                    "type": "string",
+                    "title": "Propriedade Endereço completo da Vendedora",
+                    "description": "Endereço completo da Vendedora.",
+                    "default": "",
+                    "examples": [
+                        "Rua das Revendedoras, 23 - São José dos Pinhais - PR - Brasil"
+                    ]
+                },
+                "logradouro": {
+                    "$id": "#/properties/Endereco/properties/logradouro",
+                    "type": "string",
+                    "title": "Propriedade logradouro do Endereço da Vendedora",
+                    "description": "Logradouro do Endereço da Vendedora.",
+                    "default": "",
+                    "examples": [
+                        "Rua das Revendedoras"
+                    ]
+                },
+                "numero": {
+                    "$id": "#/properties/Endereco/properties/numero",
+                    "type": "integer",
+                    "title": "Propriedade número do Endereço da Vendedora",
+                    "description": "Número do Endereço da Vendedora.",
+                    "default": 0,
+                    "examples": [
+                        23
+                    ]
+                },
+                "cep": {
+                    "$id": "#/properties/Endereco/properties/cep",
+                    "type": "string",
+                    "title": "Propriedade cep do Endereço da Vendedora",
+                    "description": "CEP do Endereço da Vendedora.",
+                    "default": "",
+                    "examples": [
+                        "83030540"
+                    ]
+                },
+                "bairro": {
+                    "$id": "#/properties/Endereco/properties/bairro",
+                    "type": "string",
+                    "title": "Propriedade bairro do Endereço da Vendedora",
+                    "description": "Bairro do Endereço da Vendedora.",
+                    "default": "",
+                    "examples": [
+                        "Afonso Pena"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "setor": {
+            "$id": "#/properties/setor",
+            "type": "string",
+            "title": "Propriedade setor da Vendedora",
+            "description": "Setor de trabalho da Vendedora.",
+            "default": "",
+            "examples": [
+                "Quem disse Berenice"
+            ]
+        }
+    },
+    "additionalProperties": true
+}

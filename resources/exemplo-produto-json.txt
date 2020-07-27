@@ -1,0 +1,76 @@
+Exemplo Json Produtos:
+
+{
+	"codigo": 1,
+	"nome": "Zaad Go Eau de Parfum",
+	"descrição": "Zaad Go é da família olfativa Amadeirada Floral.",
+	"preco-revendedora": 120.0
+}
+
+Json schema:
+
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "Estrutura da entidade produto",
+    "description": "Esta estrutura é relativa a entidade Produto no sistema cashback.",
+    "default": {},
+    "examples": [
+        {
+            "codigo": 1,
+            "nome": "Zaad Go Eau de Parfum",
+            "descrição": "Zaad Go é da família olfativa Amadeirada Floral.",
+            "preco-revendedora": 120.0
+        }
+    ],
+    "required": [
+        "codigo",
+        "nome",
+        "descrição",
+        "preco-revendedora"
+    ],
+    "properties": {
+        "codigo": {
+            "$id": "#/properties/codigo",
+            "type": "integer",
+            "title": "Propriedade código do Produto",
+            "description": "Código do Produto junto ao banco de dados.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "nome": {
+            "$id": "#/properties/nome",
+            "type": "string",
+            "title": "Propriedade nome do Produto",
+            "description": "Nome do Produto.",
+            "default": "",
+            "examples": [
+                "Zaad Go Eau de Parfum"
+            ]
+        },
+        "descrição": {
+            "$id": "#/properties/descri%C3%A7%C3%A3o",
+            "type": "string",
+            "title": "Propriedade descrição do Produto",
+            "description": "Descrição do Produto.",
+            "default": "",
+            "examples": [
+                "Zaad Go é da família olfativa Amadeirada Floral."
+            ]
+        },
+        "preco-revendedora": {
+            "$id": "#/properties/preco-revendedora",
+            "type": "number",
+            "title": "Propriedade preco-revendedora do Produto",
+            "description": "Preço do Produto para a revendedora.",
+            "default": 0.0,
+            "examples": [
+                120.0
+            ]
+        }
+    },
+    "additionalProperties": true
+}
