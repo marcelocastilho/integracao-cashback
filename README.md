@@ -4,14 +4,14 @@ Solução de integração de dados para o sistema de cashback
 ## Requisitos funcionais
 	
 * Importação e sincronização de informações de Vendedoras e Produtos para base de dados DocumentDB sistema gerenciador de cashback
-	Implantar uma rotina de busca,transformação e migração de dados para sincronização da dados de Vendedoras.
-	Implantar uma rotina de busca,transformação e migração de dados para sincronização da dados de Produtos.
+    * Implantar uma rotina de busca,transformação e migração de dados para sincronização da dados de Vendedoras.
+    * Implantar uma rotina de busca,transformação e migração de dados para sincronização da dados de Produtos.
 	
 * Salvar as solicitações de cashback no backend do Sistema 
-	Entendo como melhor solução ficar a cargo da aplicação de controle de cashback centralizar os acessos a sua base de dados.
+    * Entendo como melhor solução ficar a cargo da aplicação de controle de cashback centralizar os acessos a sua base de dados.
 
 * Enviar para um sistema do Grupo Boticário que está On Premises as informações de 
-	Entendo como melhor solução ficar a cargo da aplicação de controle de cashback fazer uma postagem de mensagem para a integração com o sistema legado.
+    * Entendo como melhor solução ficar a cargo da aplicação de controle de cashback fazer uma postagem de mensagem para a integração com o sistema legado.
 
 ## Requisitos não funcionais
 * **Politicas de retentativa:** Poder configurar regras de retentativa em caso de erro nas postagens no messageBus
