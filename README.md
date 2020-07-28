@@ -18,11 +18,12 @@ Solução de integração de dados para o sistema de cashback
 * **Resiliência:** Possibilitar uso de um orquestrador containeres, como o Kubernetes
 * **Fluxo assíncrono:** Gerar baixo acoplamento entre a aplicação 'publisher' e a(s) 'subscriber' possibilitando uma liberdade maior para mudanças
 * **Gestão de logs:** 
-    * Gerar logs a cada registro/mensagem comsumida
+    * Gerar logs a cada registro/mensagem consumida
     * Usar uma ferramenta de centralização de logs
     * Criar rotinas ou configurar TTL para expurgo dos logs
-* **Monitoria:** Ter um board que possibilite visualizar o status das integrações de forma simplificada
-		Gerar notificações em caso de problemas identificados
+* **Monitoria:** 
+    * Ter um board que possibilite visualizar o status das integrações de forma simplificada
+    * Gerar notificações em caso de problemas identificados
 
 ## Sugestão de ferramentas para a solução	
    * **Integração, transformação e migração de dados**
