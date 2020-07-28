@@ -16,7 +16,7 @@ Solução de integração de dados para o sistema de cashback
 ## Requisitos não funcionais
 * **Politicas de retentativa:** Poder configurar regras de retentativa em caso de erro nas postagens no messageBus
 * **Resiliência:** Possibilitar uso de um orquestrador containeres, como o Kubernetes
-* **Fluxo assíncrono:** Possibilitar entre o fonte e o destino possibilitando uma liberdade maior para mudanças
+* **Fluxo assíncrono:** Gerar baixo acoplamento entre a aplicação 'publisher' e a(s) 'subscriber' possibilitando uma liberdade maior para mudanças
 * **Gestão de logs:** 
     * Gerar logs a cada registro/mensagem comsumida
     * Usar uma ferramenta de centralização de logs
